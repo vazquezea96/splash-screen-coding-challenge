@@ -1,0 +1,37 @@
+
+:root {
+  --aqua: #a3c7dd;
+  --tan: #ecdcc9;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+  background-color: var(--aqua);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-x: hidden;
+	width: 100vw;
+	min-height: 100vh;
+  background: var(--sky);
+  background: linear-gradient(5deg, rgba(12, 137, 214, 0.9), rgba(61, 156, 214, 0.8), rgba(235, 238, 240, 0.363));
+}
+
+.sun {
+	width: 6rem;
+	height: 6rem;
+	background: var(--tan, 18);
+	border-radius: 50%;
+	filter: blur(2px);
+	position: absolute;
+	top: 2.5rem;
+	right: 2.5rem;
+}
