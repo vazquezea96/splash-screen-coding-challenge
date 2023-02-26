@@ -927,3 +927,138 @@ body {
 		left: 20px;
 	}
 }
+
+.clouds{
+  bottom: 0;
+  left: 0;
+  padding-top: 50px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  /* z-index: -1; */
+}
+
+@keyframes glide 
+  {
+  0%{margin-left: -100px;}
+  100%{margin-left: 100%;}
+  }
+
+.clouds{
+  display: flex;
+  flex-direction: column;
+}
+
+.cloud1, .cloud2, .cloud4, .cloud6, .cloud8, .cloud10, .cloud12, .cloud14, .cloud16{
+  position:fixed;
+  top:  80vh;
+  left: 70vh;
+  animation: glide 30s linear infinite;
+  transform: scale(1.5);
+  width: 80px;
+  height: 80px;
+  border-radius:100%;
+  background:white;
+  opacity: 0.92;
+  box-shadow: 
+  #FFFFFF -85px 25px 0 40px, /*bottom left*/
+  #FFFFFF 0px 40px 0 30px,   /*bottom middle*/
+    #FFFFFF 65px 25px 0 38px,   /*bottom right*/
+    #FFFFFF -40px -25px 0 25px,  /*top middle left*/
+    #FFFFFF 45px -28px 0 25px,   /*top middle right*/
+    #FFFFFF 5px -60px 0 20px;
+}
+.cloud3, .cloud5, .cloud7, .cloud9, .cloud11{
+  position:fixed;
+  top:  60vh;
+  left: 5vh;
+  animation: glide 35s linear infinite;
+  width: 50px;
+  height: 50px;
+  border-radius:100%;
+  background:white;
+  opacity: 0.45;
+  box-shadow: 
+    #FFFFFF -45px 15px 0 10px,
+    #FFFFFF 0px 15px 0 10px,
+    #FFFFFF 40px 15px 0 8px,
+    #FFFFFF -20px -10px 0 5px,
+    #FFFFFF 25px -8px 0 5px,
+    #FFFFFF 5px -20px 0 0px;
+}
+
+.cloud2{
+  top: 73vh;
+  left: 60vh;
+  animation: glide 40s linear infinite;
+  transform: scale(0.97);
+}
+.cloud4{
+  top: 90vh;
+  left: 45vh;
+  opacity:0.98;
+  animation: glide 35s linear infinite;
+}
+.cloud8{
+  top: 80vh;
+  left: 30vh;
+  animation: glide 50s linear infinite;
+}
+.cloud6{
+  top: 65vh;
+  left: 20vh;
+  animation: glide 55s linear infinite;
+  transform: scale(0.8);
+}
+.cloud10{
+  top: 73vh;
+  left: -10vh;
+  animation: glide 55s linear infinite;
+  transform: scale(0.97);
+}
+.cloud12{
+  top: 90vh;
+  left: -15vh;
+  opacity:0.98;
+  animation: glide 40s linear infinite;
+}
+.cloud14{
+  top: 71vh;
+  left: -45vh;
+  animation: glide 55s linear infinite;
+  transform: scale(0.95);
+}
+.cloud16{
+  top: 90vh;
+  left: -30vh;
+  animation: glide 55s linear infinite;
+}
+
+/* Small Clouds */
+.cloud3{
+  top: 50vh;
+  left: 60vh;
+  animation: glide 25s linear infinite;
+}
+.cloud5{
+  top: 60vh;
+  left: 45vh;
+  animation: glide 30s linear infinite;
+  transform: scale(1.1);
+}
+.cloud7{
+  top: 50vh;
+  left: 30vh;
+  animation: glide 35s linear infinite;
+}
+.cloud9{
+  top: 52vh;
+  left: 0vh;
+  animation: glide 30s linear infinite;
+}
+.cloud11{
+  top: 62vh;
+  left: 15vh;
+  animation: glide 30s linear infinite;
+  transform: scale(1.2);
+}
