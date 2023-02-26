@@ -1434,27 +1434,22 @@ body {
 	z-index: -1;
 }
 
-@media only screen and (max-width: 790px) {
-	.face {
-		height: 3rem;
-		width: 3rem;
-		background: #EFEEEF;
-		border-radius: 4rem;
-		transform: rotate(20deg);
-	}
-}
-
 .unicorn {
+	animation-name: unicorn-spin;
 	animation-duration: 3s;
-	animation-name: spin;
-	animation-iteration-count: 1;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
 }
 
-@keyframes spin {
+@keyframes unicorn-spin {
 	from {
 		transform: rotate(0deg);
 	}
 	to {
-		transform: rotate(-360deg);
+		transform: rotate(40deg)
 	}
+}
+
+@media only screen and (max-width: 790px) {
+
 }
