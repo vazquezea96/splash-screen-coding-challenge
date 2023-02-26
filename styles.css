@@ -928,19 +928,20 @@ body {
 	}
 }
 
-/* unicorn css */
-.unicorn:hover {
-	cursor: pointer;
-}
+/* UNICORN */
 .unicorn {
-  position: absolute;
+	position: absolute;
   left: 45%;
   top: 40%;
 }
 
+.unicorn:hover {
+	cursor: pointer;
+}
+
 .face {
   height: 6rem;
-  width: 8rem;
+  width: 9rem;
   background: #EFEEEF;
   border-radius: 4rem;
   transform: rotate(20deg);
@@ -978,7 +979,7 @@ body {
 }
 
 .nostril {
-  height: 2rem;
+  height: 1rem;
   width: 1rem;
   background: #5A5056;
   top: 1.5rem;
@@ -1133,6 +1134,29 @@ body {
   transform: rotate(260deg);
 }
 
+.purple-mane {
+	content: "";
+	height: 2rem;
+	width: 3rem;
+	position: absolute;
+	top: -0.5rem;
+	left: -2.9rem;
+	border-radius: 50%;
+	box-shadow: 5px 1rem 0 6px #a2a2ff;
+	transform: rotate(70deg);
+}
+
+.blue-mane {
+	content: "";
+	height: 2rem;
+	width: 4rem;
+	position: absolute;
+	left: -2rem;
+	border-radius: 50%;
+	box-shadow: 5px 1rem 0 6px #AFC8FF;
+	transform: rotate(40deg);
+}
+
 .mane.top::after {
   content: "";
   height: 2rem;
@@ -1154,6 +1178,18 @@ body {
   box-shadow: 3px 1rem 0 8px #FFCBC1;
   transform: rotate(250deg);
   z-index: -1;
+}
+
+.yellow-mane {
+	content: "";
+	height: 2rem;
+	width: 4rem;
+	position: absolute;
+	left: -3.5rem;
+	top: -3.5rem;
+	border-radius: 50%;
+	box-shadow: 5px 1rem 0 6px #fff6af;
+	transform: rotate(80deg);
 }
 
 .mane.mid::before {
@@ -1178,6 +1214,18 @@ body {
   box-shadow: 0 1rem 0 0.5rem #FF9CEE;
   transform: rotate(40deg);
   z-index: -1;
+}
+
+.red-mane {
+	content: "";
+	height: 2rem;
+	width: 3rem;
+	position: absolute;
+	top: -0.5rem;
+	left: -2.9rem;
+	border-radius: 50%;
+	box-shadow: 5px 1rem 0 6px #ffa2a2;
+	transform: rotate(70deg);
 }
 
 /* .neck {
@@ -1232,7 +1280,7 @@ body {
 
 .face {
 	height: 6rem;
-	width: 8rem;
+	width: 9rem;
 	background: #EFEEEF;
 	border-radius: 4rem;
 	transform: rotate(20deg);
@@ -1253,7 +1301,7 @@ body {
 }
 
 .snoot {
-	height: 7rem;
+	height: 6rem;
 	width: 14rem;
 	background: #EFEEEF;
 	left: -5rem;
@@ -1262,19 +1310,10 @@ body {
 }
 
 .nose {
-	height: 7rem;
+	height: 6rem;
 	width: 3.5rem;
 	background: #E4A3CA;
 	border-radius: 50% 0 0 50%;
-}
-
-.nostril {
-	height: 2rem;
-	width: 1rem;
-	background: #5A5056;
-	top: 1.5rem;
-	left: 1rem;
-	border-radius: 50%;
 }
 
 /* .eye::after {
@@ -1359,6 +1398,7 @@ body {
 	transform: rotate(100deg);
 }
 
+
 .mane.mid {
 	height: 2rem;
 	width: 4rem;
@@ -1407,7 +1447,7 @@ body {
 .unicorn {
 	animation-duration: 3s;
 	animation-name: spin;
-	animation-iteration-count: infinite;
+	animation-iteration-count: 1;
 }
 
 @keyframes spin {
