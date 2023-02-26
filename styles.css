@@ -928,6 +928,10 @@ body {
 	}
 }
 
+/* unicorn css */
+.unicorn:hover {
+	cursor: pointer;
+}
 .unicorn {
   position: absolute;
   left: 45%;
@@ -990,26 +994,15 @@ body {
   border-radius: 3rem 3rem 0 0;
 }
 
-.eye::after {
-  content: "";
-  height: 1rem;
-  width: 1.5rem;
-  background: #EFEEEF;
-  position: absolute;
-  left: 0.5rem;
-  top: 0.5rem;
-  border-radius: 3rem 3rem 0 0;
-}
-
-.eyelashes {
+.eyeball {
   height: 1rem;
   width: 0.5rem;
   background: #332A2F;
-  top: -0.5rem;
+  top: -0.2rem;
   left: 1rem;
 }
 
-.eyelashes::before {
+/* .eyelashes::before {
   content: "";
   height: 1rem;
   width: 0.5rem;
@@ -1029,7 +1022,56 @@ body {
   top: 0.25rem;
   left: 1rem;
   transform: rotate(30deg);
+} */
+
+.eye::after {
+  content: "";
+  height: 1rem;
+  width: 1.5rem;
+  background: #EFEEEF;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  border-radius: 3rem 3rem 0 0;
 }
+
+.eyeball {
+	width: 2rem;
+	height: 2rem;
+	background: rgb(0, 0, 0);
+	border-radius: 5rem;
+	left: 0.25rem;
+}
+
+/* .eyelashes {
+	height: 1rem;
+	width: 0.5rem;
+	background: #332A2F;
+	top: -0.5rem;
+	left: 1rem;
+}
+
+.eyelashes::before {
+	content: "";
+	height: 1rem;
+	width: 0.5rem;
+	background: #332A2F;
+	position: absolute;
+	top: 0.25rem;
+	left: -1rem;
+	transform: rotate(-40deg);
+}
+
+.eyelashes::after {
+	content: "";
+	height: 1rem;
+	width: 0.5rem;
+	background: #332A2F;
+	position: absolute;
+	top: 0.25rem;
+	left: 1rem;
+	transform: rotate(30deg);
+} */
 
 .ear {
   border-left:2rem solid transparent;
@@ -1138,7 +1180,7 @@ body {
   z-index: -1;
 }
 
-.neck {
+/* .neck {
   position: absolute;
   height: 5rem;
   width: 3rem;
@@ -1147,7 +1189,7 @@ body {
   top: 5rem;
   transform: skew(-20deg);
   z-index: -1;
-}
+} */
 
 .mane.end {
   height: 2rem;
@@ -1196,8 +1238,7 @@ body {
 	transform: rotate(20deg);
 }
 
-.face *,
-.neck * {
+.face * {
 	position: absolute;
 }
 
@@ -1236,15 +1277,7 @@ body {
 	border-radius: 50%;
 }
 
-.eye {
-	width: 2.5rem;
-	height: 1rem;
-	background: #332A2F;
-	left: 3rem;
-	border-radius: 3rem 3rem 0 0;
-}
-
-.eye::after {
+/* .eye::after {
 	content: "";
 	height: 1rem;
 	width: 1.5rem;
@@ -1253,37 +1286,8 @@ body {
 	left: 0.5rem;
 	top: 0.5rem;
 	border-radius: 3rem 3rem 0 0;
-}
+} */
 
-.eyelashes {
-	height: 1rem;
-	width: 0.5rem;
-	background: #332A2F;
-	top: -0.5rem;
-	left: 1rem;
-}
-
-.eyelashes::before {
-	content: "";
-	height: 1rem;
-	width: 0.5rem;
-	background: #332A2F;
-	position: absolute;
-	top: 0.25rem;
-	left: -1rem;
-	transform: rotate(-40deg);
-}
-
-.eyelashes::after {
-	content: "";
-	height: 1rem;
-	width: 0.5rem;
-	background: #332A2F;
-	position: absolute;
-	top: 0.25rem;
-	left: 1rem;
-	transform: rotate(30deg);
-}
 
 .ear {
 	border-left: 2rem solid transparent;
@@ -1390,45 +1394,26 @@ body {
 	z-index: -1;
 }
 
-.neck {
-	position: absolute;
-	height: 5rem;
-	width: 3rem;
-	background: #EFEEEF;
-	left: 5rem;
-	top: 5rem;
-	transform: skew(-20deg);
-	z-index: -1;
+@media only screen and (max-width: 790px) {
+	.face {
+		height: 3rem;
+		width: 3rem;
+		background: #EFEEEF;
+		border-radius: 4rem;
+		transform: rotate(20deg);
+	}
 }
 
-.mane.end {
-	height: 2rem;
-	width: 4rem;
-	top: 1rem;
-	border-radius: 50%;
-	box-shadow: 3px 1rem 0 8px #B6EDB6;
-	transform: rotate(270deg);
+.unicorn {
+	animation-duration: 3s;
+	animation-name: slidein;
 }
 
-.mane.end::before {
-	content: "";
-	height: 3rem;
-	width: 5rem;
-	position: absolute;
-	left: 1rem;
-	border-radius: 50%;
-	box-shadow: 5px 1rem 0 6px #CCAAFF;
-}
-
-.mane.end::after {
-	content: "";
-	height: 3rem;
-	width: 5rem;
-	position: absolute;
-	top: 0.5rem;
-	left: -0.5rem;
-	border-radius: 50%;
-	box-shadow: 5px 1rem 0 6px #FFBDBD;
-	transform: rotate(30deg);
-	z-index: -1;
+@keyframes slidein {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
 }
