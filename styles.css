@@ -1406,10 +1406,11 @@ body {
 
 .unicorn {
 	animation-duration: 3s;
-	animation-name: slidein;
+	animation-name: spin;
+	animation-iteration-count: infinite;
 }
 
-@keyframes slidein {
+@keyframes spin {
 	from {
 		transform: rotate(0deg);
 	}
